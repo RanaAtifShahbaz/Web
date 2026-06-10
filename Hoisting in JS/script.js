@@ -4,3 +4,8 @@
 console.log(a);
 var a = 10;
 console.log(a);
+
+// Example 2
+console.log(a);
+let a = 10;
+console.log(a);
