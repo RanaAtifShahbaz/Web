@@ -1,6 +1,4 @@
-//When a function is defined inside another function, it captures a reference to the outer function's variables — this bundle of function + its captured environment is the closure.
-
-// function outerFunction() {
+function outerFunction() {
 //     let counter = 0; // This variable is captured by the inner function
 
 //     function innerFunction() {
@@ -29,19 +27,3 @@
 // console.log(counter()); // Output: 1
 // console.log(counter()); // Output: 2
 // console.log(counter()); // Output: 3
-
-// Example 3
-function makeCounter() {
-  let count = 0;                    // private — unreachable from outside
-  return {
-    increment: () => ++count,
-    decrement: () => --count,
-    value:     () => count,
-  };
-}
-
-const c = makeCounter();
-c.increment(); // 1
-c.increment(); // 2
-c.value();     // 2
-// c.count     // undefined — no direct access
