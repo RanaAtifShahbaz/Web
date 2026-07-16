@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- 3. Hide and Show
+
+Create a button that hides a paragraph.
+
+Click again to show it. -->
+
+<button id="Hidepara">Hide</button>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis eveniet, mollitia dicta fugiat nostrum veritatis earum similique asperiores. Ipsam dolores fuga expedita non sunt ea recusandae deleniti molestiae optio cum?</p>
+
+</body>
+<script>
+  let btn=document.querySelector("#Hidepara")
+  let para=document.querySelector("p")
+  btn.addEventListener("click",()=>{
+    if(btn.innerText === "Hide"){
+        para.style.display="none"
+        btn.innerText = "Show"
+    }
+    else{
+        para.style.display="block"
+        btn.innerText="Hide"
+    }
+
+  })
+</script>
+</html>
