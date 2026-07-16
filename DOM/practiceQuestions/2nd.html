@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+        .blue{
+            background-color: blue;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- Change Color
+
+Create three buttons:
+
+Red
+Green
+Blue
+
+Each changes the background color of a div. -->
+<div class="red">
+<button>Red</button>
+</div>
+<div class="green">
+<button>Green</button>
+</div>
+<div class="blue">
+<button>Blue</button>
+</div>
+
+
+</body>
+<script>
+// let Changer=document.querySelector(".red")
+let btnr=document.querySelector(".red")
+let btng=document.querySelector(".green")
+let btnb=document.querySelector(".blue")
+btnr.addEventListener("click",()=>{
+  btnr.style.backgroundColor="red"
+
+
+})
+btng.addEventListener("click",()=>{
+  btng.style.backgroundColor="green"
+
+
+})
+btnb.addEventListener("click",()=>{
+  btnb.style.backgroundColor="blue"
+
+
+})
+</script>
+</html>
